@@ -5,6 +5,39 @@ entries are generated automatically by [release-please](.github/workflows/releas
 from conventional commits; the `## [Unreleased]` section (when present) is a
 human-curated preview of the next release.
 
+## [0.3.10](https://github.com/chmonitor/chmonitor/compare/v0.3.9...v0.3.10) (2026-10-26)
+
+
+### ✨ Features
+
+* **insights:** copyable coding-agent prompt to fix an insight on your setup ([#4224](https://github.com/chmonitor/chmonitor/issues/4224)) ([a4aff6f](https://github.com/chmonitor/chmonitor/commit/a4aff6fe13d49cf231a62efc6c2afd3f418e6fe8))
+* **sql-editor:** schema-aware typeahead completion ([#4200](https://github.com/chmonitor/chmonitor/issues/4200)) ([a5dc22d](https://github.com/chmonitor/chmonitor/commit/a5dc22d760e50d01e9b3f62beff109b7198e177b))
+* **usage:** tabs, daily chart and full-width hour heatmap on the user usage page ([#4223](https://github.com/chmonitor/chmonitor/issues/4223)) ([8dca262](https://github.com/chmonitor/chmonitor/commit/8dca262301fb7b76c71fca01670c7a5ab8c5a616))
+
+
+### 🐛 Bug Fixes
+
+* **api:** return a JSON 500 when settings-diff or schema-diff throws ([#4197](https://github.com/chmonitor/chmonitor/issues/4197)) ([0c2d544](https://github.com/chmonitor/chmonitor/commit/0c2d5442ce4cd6b50328a464107075c5924fa45b))
+* **attribution:** tag explain and browser-proxy queries with their editor source ([#4196](https://github.com/chmonitor/chmonitor/issues/4196)) ([3fc7ee4](https://github.com/chmonitor/chmonitor/commit/3fc7ee4bc3aa548adc24c1455dc1f57c90dce752))
+* **cli:** run the Cargo.lock sync online so CI can resolve the index ([#4189](https://github.com/chmonitor/chmonitor/issues/4189)) ([c023c5d](https://github.com/chmonitor/chmonitor/commit/c023c5d85b7dcdbd04e4c686a35f5af6ee763d2d))
+* **cli:** sync the chmonitor Cargo.lock entry before the crates.io publish ([#4187](https://github.com/chmonitor/chmonitor/issues/4187)) ([57b2570](https://github.com/chmonitor/chmonitor/commit/57b25706080558d8cea723ca457e932911f2f5d4))
+* **connections:** attribute the Test connection query ([#4195](https://github.com/chmonitor/chmonitor/issues/4195)) ([2bad367](https://github.com/chmonitor/chmonitor/commit/2bad3677c0421e40a2c735ae30b768029b174663))
+* **mobile:** 12px minimum text on phones and room for the assistant button ([#4212](https://github.com/chmonitor/chmonitor/issues/4212)) ([d27ec6c](https://github.com/chmonitor/chmonitor/commit/d27ec6c9a16376fa7a1237ae616ed2b40e716e55))
+* **mobile:** 44px touch areas for small standalone links and buttons ([#4222](https://github.com/chmonitor/chmonitor/issues/4222)) ([492c18d](https://github.com/chmonitor/chmonitor/commit/492c18d9366f1738d5fb08dc9eb9ce36dec02b93))
+* **mobile:** 44px touch targets for chips, pins, chart actions and row chevrons ([#4214](https://github.com/chmonitor/chmonitor/issues/4214)) ([69d5f7f](https://github.com/chmonitor/chmonitor/commit/69d5f7f8bd59f3b761e0b451ecd4a85bc407d617))
+* **mobile:** let visitors dismiss the demo outage notice ([#4221](https://github.com/chmonitor/chmonitor/issues/4221)) ([2f71969](https://github.com/chmonitor/chmonitor/commit/2f71969c29b5981d34451c10795be76cf373cb5c))
+* **mobile:** never open the agent settings drawer on phones at load ([#4215](https://github.com/chmonitor/chmonitor/issues/4215)) ([bf5f7c7](https://github.com/chmonitor/chmonitor/commit/bf5f7c79c26d66b4a81c61957b3d0750ed15b3e3))
+* **mobile:** raise sub-12px text to 12px on phones ([#4220](https://github.com/chmonitor/chmonitor/issues/4220)) ([38a8193](https://github.com/chmonitor/chmonitor/commit/38a8193541da70b813519b773b0757b72837bdb2))
+* **mobile:** show the demo outage notice without shifting the page ([#4213](https://github.com/chmonitor/chmonitor/issues/4213)) ([c402aad](https://github.com/chmonitor/chmonitor/commit/c402aad7a61bdd2d056ed97bb7711a682d7e3397))
+* **query-config:** run detached-parts-triage and unused-projections on ClickHouse 23.3 ([#4211](https://github.com/chmonitor/chmonitor/issues/4211)) ([f55038e](https://github.com/chmonitor/chmonitor/commit/f55038e7a6fe7e1147cd21759ea2e80b2109d21c))
+* **smoke:** report a demo outage as a warning, keep real failures red ([#4203](https://github.com/chmonitor/chmonitor/issues/4203)) ([344a689](https://github.com/chmonitor/chmonitor/commit/344a6890946caef7ab5e55c82bcc0842d68b4a97))
+
+
+### ⚡ Performance
+
+* **dashboard:** load Sentry and PostHog when the browser is idle ([#4218](https://github.com/chmonitor/chmonitor/issues/4218)) ([e08cf2e](https://github.com/chmonitor/chmonitor/commit/e08cf2ee3fbc7cd05fea736fa80792cdee537a80))
+* **mobile:** pause the health and topology tickers while the tab is hidden ([#4216](https://github.com/chmonitor/chmonitor/issues/4216)) ([377aadf](https://github.com/chmonitor/chmonitor/commit/377aadf2e495ec702d13cee8e3764cf1a9679298))
+
 ## [0.3.9](https://github.com/chmonitor/chmonitor/compare/v0.3.8...v0.3.9) (2026-10-24)
 
 
